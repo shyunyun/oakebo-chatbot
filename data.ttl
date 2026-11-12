@@ -1,0 +1,519 @@
+# Oakland Ebonics Dilemma (oakebo) dataset
+# Generated from sheets: oakebo-Instance, oakebo-triple
+# Namespace URIs below are local/example namespaces for this course dataset.
+# If your class specifies official namespace URIs, replace only the prefix IRIs; the local names can stay the same.
+
+@prefix dm: <https://example.org/dilemma/> .
+@prefix oakebo: <https://example.org/oakebo/> .
+@prefix schema: <https://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oakebo:dataset a schema:Dataset ;
+    rdfs:label "Oakland Ebonics Dilemma"@en ;
+    schema:name "Oakland Ebonics Dilemma"@en ;
+    schema:identifier "oakebo" .
+
+# -----------------------------------------------------------------------------
+# Instances
+# -----------------------------------------------------------------------------
+dm:A00120 a dm:Document ;
+    rdfs:label """오클랜드 교육위원회 원 결의안"""@ko ;
+    dm:groupName """자료"""@ko ;
+    dm:remark """1996년 12월 18일 오클랜드 교육위원회가 채택한 결의안 9697-0063호의 원문으로, 흔히 "에보닉스 결의안"이라고 불린다. / 원문 표기: Resolution No. 9697-0063 / 통칭: Ebonics Resolution."""@ko ;
+    schema:url <https://www.edweek.org/leadership/full-text-of-ebonics-resolution-adopted-by-oakland-board/1997/01> ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00121 a dm:Person ;
+    rdfs:label """로버트 L. 윌리엄스"""@ko ;
+    dm:groupName """실존 인물"""@ko ;
+    dm:remark """1930-2020, 1973년 1월 26일 세인트루이스 학술회의에서 에보닉스라는 말을 만든 미국의 심리학자이다. / 원문 표기: Robert L. Williams."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00122 a dm:Document ;
+    rdfs:label """Ebonics 관련 증언과 Jesse Jackson의 prepared statement가 수록된 공식 청문회 기록"""@ko ;
+    dm:groupName """자료"""@ko ;
+    dm:remark """1997년 1월 23일 열린 미국 상원 에보닉스 청문회의 공식 기록으로, 윌리엄스와 잭슨의 서면 진술이 실려 있다. / 원문 표기: S. Hrg. 105-20 — EBONICS."""@ko ;
+    schema:url <https://www.govinfo.gov/content/pkg/CHRG-105shrg39641/pdf/CHRG-105shrg39641.pdf> ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00123 a dm:Person ;
+    rdfs:label """제시 잭슨"""@ko ;
+    dm:groupName """실존 인물"""@ko ;
+    dm:remark """1941-2026, 미국의 민권운동가이자 목사로, 이 데이터셋 딜레마의 주체이다. / 원문 표기: Jesse Jackson."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00124 a dm:Organization ;
+    rdfs:label """오클랜드 교육위원회"""@ko ;
+    dm:groupName """실재 단체"""@ko ;
+    dm:remark """오클랜드 교육구의 정책을 의결하는 교육위원회로, 에보닉스 결의안을 채택한 기관이다. / 원문 표기: Oakland Board of Education (OBE)."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00125 a dm:Organization ;
+    rdfs:label """오클랜드 통합교육구"""@ko ;
+    dm:groupName """실재 단체"""@ko ;
+    dm:remark """캘리포니아주 오클랜드의 공립학교를 운영하는 교육구로, 결의안에 따른 정책을 실행하는 기관이다. / 원문 표기: Oakland Unified School District (OUSD)."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00126 a dm:Concept ;
+    rdfs:label """에보닉스"""@ko ;
+    dm:groupName """언어학 용어"""@ko ;
+    dm:remark """ebony와 phonics를 합쳐 만든 말로, 1996년 Oakland 논쟁에서 아프리카계 미국인의 언어적 변이를 가리키는 핵심 용어로 사용되었다. / 원문 표기: Ebonics."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00127 a dm:Event ;
+    rdfs:label """잭슨의 「미트 더 프레스」 결의안 비판"""@ko ;
+    dm:groupName """실재 사건"""@ko ;
+    dm:remark """1996년 12월 22일 NBC 「미트 더 프레스」에서 잭슨이 원 결의안을 공개적으로 비판한 일이다. / 원문 표기: Meet the Press."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00128 a dm:Dilemma ;
+    rdfs:label """잭슨: 원 결의안을 바로 공개 비판할 것인가"""@ko ;
+    dm:groupName """딜레마"""@ko ;
+    dm:remark """정책의 취지를 확인하기 전에 공개 비판으로 표준 영어 교육의 중요성을 바로 주장할지' 혹은 '비판을 미루고 취지를 먼저 확인할지'라는 예상되는 선택지 중 잭슨이 실제로 내린 선택이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-15"^^xsd:date ;
+    dm:note """작업자 해석: 12/22 공개 비판과 이후 입장 완화를 바탕으로 ‘즉시 공개 비판’과 ‘비판 유보·정책 취지 확인’을 두 선택지로 구성하였다. Jackson이 당시 두 선택지를 명시적으로 비교했다는 직접 기록은 확인되지 않았다."""@ko .
+
+dm:A00129 a dm:Option ;
+    rdfs:label """잭슨: 공개적으로 비판한다"""@ko ;
+    dm:groupName """선택지"""@ko ;
+    dm:remark """원 결의안의 문구를 곧바로 공개 비판하는 선택지이다. / 작업자 해석: 표준 영어 습득의 중요성을 즉시 주장할 수 있지만, 정책의 취지를 확인하지 못한 채 비판할 위험이 있다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00130 a dm:Option ;
+    rdfs:label """잭슨: 공개 비판을 유보한다"""@ko ;
+    dm:groupName """선택지"""@ko ;
+    dm:remark """정책의 취지를 확인할 때까지 공개 비판을 미루는 선택지이다. / 작업자 해석: 확인한 뒤 확실하게 비판할 수 있지만, 문제라고 본 표현을 즉시 비판하는 효과는 포기한다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00131 a dm:Document ;
+    rdfs:label """로스앤젤레스 타임스의 잭슨 비판 기사"""@ko ;
+    dm:groupName """자료"""@ko ;
+    dm:remark """1996년 12월 23일 로스앤젤레스 타임스가 잭슨의 결의안 비판을 보도한 기사이다. / 원문 표기: Los Angeles Times."""@ko ;
+    schema:url <https://www.latimes.com/archives/la-xpm-1996-12-23-mn-11966-story.html> ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00132 a dm:Document ;
+    rdfs:label """로스앤젤레스 타임스의 잭슨 입장 완화 기사"""@ko ;
+    dm:groupName """자료"""@ko ;
+    dm:remark """1996년 12월 27일 로스앤젤레스 타임스가 잭슨의 입장 완화와 오클랜드 통합교육구 측의 정책 설명을 보도한 기사이다. 원문 표기: Los Angeles Times."""@ko ;
+    schema:url <https://www.latimes.com/archives/la-xpm-1996-12-27-mn-13012-story.html> ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00133 a dm:Event ;
+    rdfs:label """잭슨의 입장 완화"""@ko ;
+    dm:groupName """실재 사건"""@ko ;
+    dm:remark """1996년 12월 26일 오클랜드 학교 관계자들과 여러 차례 통화한 뒤 잭슨이 결의안 비판을 누그러뜨린 일이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00134 a dm:Event ;
+    rdfs:label """잭슨의 시카고 성명"""@ko ;
+    dm:groupName """실재 사건"""@ko ;
+    dm:remark """1996년 12월 21일 잭슨이 시카고에서 결의안에 대해 낸 성명이다. / 원문 표기: Chicago."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00135 a dm:Event ;
+    rdfs:label """잭슨과 오클랜드 관계자의 회동"""@ko ;
+    dm:groupName """실재 사건"""@ko ;
+    dm:remark """1996년 12월 30일 잭슨이 오클랜드를 찾아 학교 관계자들을 직접 만난 일이다. / 원문 표기: Oakland."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00136 a dm:Event ;
+    rdfs:label """잭슨과 게트리지의 전화 회의"""@ko ;
+    dm:groupName """실재 사건"""@ko ;
+    dm:remark """1996년 12월 27일 잭슨이 오클랜드 통합교육구 교육감 캐럴린 게트리지와 전화 회의를 한 일이다. / 원문 표기: Carolyn Getridge, conference call."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00137 a dm:Document ;
+    rdfs:label """오클랜드 교육위원회 수정 결의안"""@ko ;
+    dm:groupName """자료"""@ko ;
+    dm:remark """1997년 1월 15일 오클랜드 교육위원회가 원 결의안의 문구를 고쳐 다시 채택한 결의안으로, 링귀스트 리스트 8.56에 전문이 실려 있다. / 원문 표기: LINGUIST List 8.56."""@ko ;
+    schema:url <https://cf.linguistlist.org/issues/8/8-56.html> ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00138 a dm:Event ;
+    rdfs:label """오클랜드 교육위원회의 수정 결의안 채택"""@ko ;
+    dm:groupName """실재 사건"""@ko ;
+    dm:remark """1997년 1월 15일 교육위원회가 수정 결의안을 찬성 7, 반대 0으로 채택한 일이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00139 a dm:Event ;
+    rdfs:label """오클랜드 교육위원회의 원 결의안 채택"""@ko ;
+    dm:groupName """실재 사건"""@ko ;
+    dm:remark """1996년 12월 18일 교육위원회가 결의안 9697-0063호를 채택한 일이다. / 원문 표기: Resolution No. 9697-0063."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00140 a dm:Event ;
+    rdfs:label """미국 상원 에보닉스 청문회"""@ko ;
+    dm:groupName """실재 사건"""@ko ;
+    dm:remark """1997년 1월 23일 미국 상원에서 에보닉스를 주제로 열린 청문회이다. / 원문 표기: U.S. Senate Ebonics hearing."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00141 a dm:Person ;
+    rdfs:label """캐럴린 게트리지"""@ko ;
+    dm:groupName """실존 인물"""@ko ;
+    dm:remark """결의안이 채택될 당시 오클랜드 통합교육구의 교육감이다. / 원문 표기: Carolyn Getridge."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00142 a dm:Document ;
+    rdfs:label """워싱턴 포스트의 잭슨·게트리지 전화 회의 보도 기사"""@ko ;
+    dm:groupName """자료"""@ko ;
+    dm:remark """워싱턴 포스트가 잭슨과 게트리지의 전화 회의, 잭슨의 오클랜드 방문 계획을 보도한 기사이다. / 원문 표기: The Washington Post, "Jackson to Meet in Oakland on Language Teaching"."""@ko ;
+    schema:url <https://www.washingtonpost.com/archive/politics/1996/12/28/jackson-to-meet-in-oakland-on-language-teaching/2c076dcc-01aa-403b-ab86-553bfcc1a1e0/> ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00143 a dm:Document ;
+    rdfs:label """로스앤젤레스 타임스의 잭슨 오클랜드 회동 기사"""@ko ;
+    dm:groupName """자료"""@ko ;
+    dm:remark """1996년 12월 31일 로스앤젤레스 타임스가 잭슨과 오클랜드 관계자의 회동을 보도한 기사이다. / 원문 표기: Los Angeles Times."""@ko ;
+    schema:url <https://www.latimes.com/archives/la-xpm-1996-12-31-mn-14142-story.html> ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-15"^^xsd:date .
+
+dm:A00144 a dm:Organization ;
+    rdfs:label """로스앤젤레스 타임스"""@ko ;
+    dm:groupName """실재 단체"""@ko ;
+    dm:remark """미국 로스앤젤레스에서 발행되는 일간지이다. / 원문 표기: Los Angeles Times."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00145 a dm:Organization ;
+    rdfs:label """워싱턴 포스트"""@ko ;
+    dm:groupName """실재 단체"""@ko ;
+    dm:remark """미국 워싱턴 D.C.에서 발행되는 일간지이다. / 원문 표기: The Washington Post."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00146 a dm:Claim ;
+    rdfs:label """잭슨의 진술: 에보닉스는 언어가 아니라 언어 패턴이다"""@ko ;
+    dm:groupName """주장"""@ko ;
+    dm:remark """잭슨이 게트리지와 통화한 뒤 에보닉스를 언어가 아니라 언어 패턴이라고 말한 진술이다. 근거: 워싱턴 포스트 기사 24행. / 원문 표기: "a language pattern, not a language"."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+dm:A00147 a dm:Claim ;
+    rdfs:label """오클랜드 교육위원회의 주장: 아프리카 언어 체계는 영어의 방언이 아니다"""@ko ;
+    dm:groupName """주장"""@ko ;
+    dm:remark """원 결의안이 아프리카 언어 체계를 'genetically based'된 것이며 영어의 방언이 아니라고 규정한 문구를 주장으로 기록한 것이다. / 원문 표기: African Language Systems, "genetically based and not a dialect of English"."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-10-13"^^xsd:date .
+
+# -----------------------------------------------------------------------------
+# Core RDF triples
+# -----------------------------------------------------------------------------
+dm:A00131 dm:reports dm:A00127 .
+dm:A00131 schema:publisher dm:A00144 .
+dm:A00137 oakebo:isVersionOf dm:A00120 .
+dm:A00146 dm:hasClaimant dm:A00123 .
+dm:A00129 dm:actualChooser dm:A00123 .
+dm:A00128 dm:hasDecisionMaker dm:A00123 .
+dm:A00128 dm:hasOption dm:A00129 .
+dm:A00128 dm:hasOption dm:A00130 .
+dm:A00129 dm:isRealizedBy dm:A00127 .
+dm:A00127 dm:isOutcomeOf dm:A00128 .
+dm:A00132 dm:reports dm:A00133 .
+dm:A00132 schema:publisher dm:A00144 .
+dm:A00142 dm:reports dm:A00136 .
+dm:A00142 schema:publisher dm:A00145 .
+dm:A00143 dm:reports dm:A00135 .
+dm:A00143 schema:publisher dm:A00144 .
+dm:A00127 dm:hasParticipant dm:A00123 .
+dm:A00133 dm:hasParticipant dm:A00123 .
+dm:A00136 dm:hasParticipant dm:A00123 .
+dm:A00136 dm:hasParticipant dm:A00141 .
+dm:A00141 schema:memberOf dm:A00125 .
+dm:A00135 dm:hasParticipant dm:A00123 .
+dm:A00146 dm:isAbout dm:A00126 .
+dm:A00142 dm:isEvidenceFor dm:A00146 .
+dm:A00147 dm:hasClaimant dm:A00124 .
+dm:A00147 dm:isAbout dm:A00126 .
+dm:A00120 dm:isEvidenceFor dm:A00147 .
+dm:A00139 dm:hasParticipant dm:A00124 .
+dm:A00138 dm:hasParticipant dm:A00124 .
+
+# -----------------------------------------------------------------------------
+# Triple provenance / relation remarks (standard RDF reification)
+# -----------------------------------------------------------------------------
+oakebo:statement001 a rdf:Statement ;
+    rdf:subject dm:A00131 ;
+    rdf:predicate dm:reports ;
+    rdf:object dm:A00127 ;
+    dm:remark """1996년 12월 23일 자 이 기사는 12월 22일 잭슨이 방송에서 결의안을 비판한 일을 보도한다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement002 a rdf:Statement ;
+    rdf:subject dm:A00131 ;
+    rdf:predicate schema:publisher ;
+    rdf:object dm:A00144 ;
+    dm:remark """이 기사를 낸 매체는 로스앤젤레스 타임스이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement003 a rdf:Statement ;
+    rdf:subject dm:A00137 ;
+    rdf:predicate oakebo:isVersionOf ;
+    rdf:object dm:A00120 ;
+    dm:remark """수정 결의안은 원 결의안의 문구를 고친 판본이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement004 a rdf:Statement ;
+    rdf:subject dm:A00146 ;
+    rdf:predicate dm:hasClaimant ;
+    rdf:object dm:A00123 ;
+    dm:remark """이 진술을 한 사람은 제시 잭슨이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement005 a rdf:Statement ;
+    rdf:subject dm:A00129 ;
+    rdf:predicate dm:actualChooser ;
+    rdf:object dm:A00123 ;
+    dm:remark """원 결의안을 공개적으로 비판하는 선택지를 실제로 고른 사람은 제시 잭슨이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement006 a rdf:Statement ;
+    rdf:subject dm:A00128 ;
+    rdf:predicate dm:hasDecisionMaker ;
+    rdf:object dm:A00123 ;
+    dm:remark """이 딜레마에서 선택을 하는 사람은 제시 잭슨이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement007 a rdf:Statement ;
+    rdf:subject dm:A00128 ;
+    rdf:predicate dm:hasOption ;
+    rdf:object dm:A00129 ;
+    dm:remark """작업자 해석: 이 딜레마의 선택지 중 하나는 원 결의안을 즉시 공개적으로 비판하는 것이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement008 a rdf:Statement ;
+    rdf:subject dm:A00128 ;
+    rdf:predicate dm:hasOption ;
+    rdf:object dm:A00130 ;
+    dm:remark """작업자 해석: 이 딜레마의 선택지 중 하나는 원 결의안을 즉시 공개적으로 비판하는 것이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement009 a rdf:Statement ;
+    rdf:subject dm:A00129 ;
+    rdf:predicate dm:isRealizedBy ;
+    rdf:object dm:A00127 ;
+    dm:remark """잭슨의 실제 선택은 바로 공개 비판을 하는 것이다.공개적으로 비판한다는 선택지는 1996년 12월 22일 「미트 더 프레스」에서의 결의안 비판 사건으로 실현되었다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement010 a rdf:Statement ;
+    rdf:subject dm:A00127 ;
+    rdf:predicate dm:isOutcomeOf ;
+    rdf:object dm:A00128 ;
+    dm:remark """1996년 12월 22일의 공개 비판은 이 딜레마에서 실제로 나타난 결과이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement011 a rdf:Statement ;
+    rdf:subject dm:A00132 ;
+    rdf:predicate dm:reports ;
+    rdf:object dm:A00133 ;
+    dm:remark """1996년 12월 27일 자 LA Times 기사는 전날인 12월 26일 잭슨이 초기 비판을 완화한 일을 보도한다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement012 a rdf:Statement ;
+    rdf:subject dm:A00132 ;
+    rdf:predicate schema:publisher ;
+    rdf:object dm:A00144 ;
+    dm:remark """이 기사를 발행한 매체는 로스앤젤레스 타임스이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement013 a rdf:Statement ;
+    rdf:subject dm:A00142 ;
+    rdf:predicate dm:reports ;
+    rdf:object dm:A00136 ;
+    dm:remark """이 기사는 1996년 12월 27일 잭슨과 OUSD 교육감 캐럴린 게트리지의 전화 회의를 보도한다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement014 a rdf:Statement ;
+    rdf:subject dm:A00142 ;
+    rdf:predicate schema:publisher ;
+    rdf:object dm:A00145 ;
+    dm:remark """이 기사를 발행한 매체는 워싱턴 포스트이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement015 a rdf:Statement ;
+    rdf:subject dm:A00143 ;
+    rdf:predicate dm:reports ;
+    rdf:object dm:A00135 ;
+    dm:remark """1996년 12월 31일 자 LA Times 기사는 전날인 12월 30일 잭슨과 오클랜드 관계자들의 회동을 보도한다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement016 a rdf:Statement ;
+    rdf:subject dm:A00143 ;
+    rdf:predicate schema:publisher ;
+    rdf:object dm:A00144 ;
+    dm:remark """이 기사를 발행한 매체는 로스앤젤레스 타임스이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement017 a rdf:Statement ;
+    rdf:subject dm:A00127 ;
+    rdf:predicate dm:hasParticipant ;
+    rdf:object dm:A00123 ;
+    dm:remark """1996년 12월 22일 「미트 더 프레스」 결의안 비판 사건의 참여자는 제시 잭슨이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement018 a rdf:Statement ;
+    rdf:subject dm:A00133 ;
+    rdf:predicate dm:hasParticipant ;
+    rdf:object dm:A00123 ;
+    dm:remark """1996년 12월 26일 입장 완화의 당사자는 제시 잭슨이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement019 a rdf:Statement ;
+    rdf:subject dm:A00136 ;
+    rdf:predicate dm:hasParticipant ;
+    rdf:object dm:A00123 ;
+    dm:remark """1996년 12월 27일 전화 회의의 참여자 가운데 한 사람은 제시 잭슨이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement020 a rdf:Statement ;
+    rdf:subject dm:A00136 ;
+    rdf:predicate dm:hasParticipant ;
+    rdf:object dm:A00141 ;
+    dm:remark """1996년 12월 27일 전화 회의의 참여자 가운데 한 사람은 캐럴린 게트리지이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement021 a rdf:Statement ;
+    rdf:subject dm:A00141 ;
+    rdf:predicate schema:memberOf ;
+    rdf:object dm:A00125 ;
+    dm:remark """캐럴린 게트리지는 당시 오클랜드 통합교육구(OUSD)의 교육감으로서 OUSD에 소속되어 있었다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement022 a rdf:Statement ;
+    rdf:subject dm:A00135 ;
+    rdf:predicate dm:hasParticipant ;
+    rdf:object dm:A00123 ;
+    dm:remark """1996년 12월 30일 오클랜드 관계자들과의 회동에 제시 잭슨이 참여했다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement023 a rdf:Statement ;
+    rdf:subject dm:A00146 ;
+    rdf:predicate dm:isAbout ;
+    rdf:object dm:A00126 ;
+    dm:remark """이 진술은 에보닉스가 독립된 언어인지, 언어 패턴으로 볼 것인지에 관한 잭슨의 입장이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement024 a rdf:Statement ;
+    rdf:subject dm:A00142 ;
+    rdf:predicate dm:isEvidenceFor ;
+    rdf:object dm:A00146 ;
+    dm:remark """이 Washington Post 기사는 잭슨이 에보닉스를 'a language pattern, not a language'라고 표현한 진술의 근거 기록물이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement025 a rdf:Statement ;
+    rdf:subject dm:A00147 ;
+    rdf:predicate dm:hasClaimant ;
+    rdf:object dm:A00124 ;
+    dm:remark """이 주장을 제시한 주체는 오클랜드 교육위원회이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement026 a rdf:Statement ;
+    rdf:subject dm:A00147 ;
+    rdf:predicate dm:isAbout ;
+    rdf:object dm:A00126 ;
+    dm:remark """이 주장은 원 결의안에서 에보닉스 논쟁과 관련해 사용된 'African Language Systems'의 언어적 지위에 관한 것으로, 데이터셋에서는 에보닉스 개념과 연결한다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement027 a rdf:Statement ;
+    rdf:subject dm:A00120 ;
+    rdf:predicate dm:isEvidenceFor ;
+    rdf:object dm:A00147 ;
+    dm:remark """원 결의안의 'genetically based and not a dialect of English'라는 문구가 해당 주장의 직접적인 근거가 된다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement028 a rdf:Statement ;
+    rdf:subject dm:A00139 ;
+    rdf:predicate dm:hasParticipant ;
+    rdf:object dm:A00124 ;
+    dm:remark """1996년 12월 18일 원 결의안 채택 사건에 오클랜드 교육위원회가 참여했다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement029 a rdf:Statement ;
+    rdf:subject dm:A00138 ;
+    rdf:predicate dm:hasParticipant ;
+    rdf:object dm:A00124 ;
+    dm:remark """1997년 1월 15일 수정 결의안 채택 사건에 오클랜드 교육위원회가 참여했다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
