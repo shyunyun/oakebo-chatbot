@@ -1,7 +1,6 @@
-# Oakland Ebonics Dilemma (oakebo) dataset
-# Generated from sheets: oakebo-Instance, oakebo-triple
-# Namespace URIs below are local/example namespaces for this course dataset.
-# If your class specifies official namespace URIs, replace only the prefix IRIs; the local names can stay the same.
+# Oakland Ebonics Dilemma (oakebo) — revised dataset
+# Source sheets: oakebo-Instance, oakebo-triple
+# NOTE: dm: and oakebo: namespace URIs are placeholders because the workbook does not define final namespace URIs.
 
 @prefix dm: <https://example.org/dilemma/> .
 @prefix oakebo: <https://example.org/oakebo/> .
@@ -71,10 +70,10 @@ dm:A00125 a dm:Organization ;
 dm:A00126 a dm:Concept ;
     rdfs:label """에보닉스"""@ko ;
     dm:groupName """언어학 용어"""@ko ;
-    dm:remark """ebony와 phonics를 합쳐 만든 말로, 1996년 Oakland 논쟁에서 아프리카계 미국인의 언어적 변이를 가리키는 핵심 용어로 사용되었다. / 원문 표기: Ebonics."""@ko ;
+    dm:remark """ebony와 phonics를 합쳐 만든 말로, 1996년 Oakland 논쟁에서 아프리카계 미국인의 언어적 변이를 가리키는 핵심 용어로 사용되었다. / 원문 표기: Ebonics. 이 데이터셋에서는 Ebonics의 언어적 지위를 사실로 고정하지 않고, 당시 논쟁의 대상이 된 개념으로 다룬다."""@ko ;
     dm:dataset """oakebo""" ;
     dm:recorder """수현"""@ko ;
-    dm:recordDate "2026-10-13"^^xsd:date .
+    dm:recordDate "2026-11-19"^^xsd:date .
 
 dm:A00127 a dm:Event ;
     rdfs:label """잭슨의 「미트 더 프레스」 결의안 비판"""@ko ;
@@ -87,27 +86,27 @@ dm:A00127 a dm:Event ;
 dm:A00128 a dm:Dilemma ;
     rdfs:label """잭슨: 원 결의안을 바로 공개 비판할 것인가"""@ko ;
     dm:groupName """딜레마"""@ko ;
-    dm:remark """정책의 취지를 확인하기 전에 공개 비판으로 표준 영어 교육의 중요성을 바로 주장할지' 혹은 '비판을 미루고 취지를 먼저 확인할지'라는 예상되는 선택지 중 잭슨이 실제로 내린 선택이다."""@ko ;
+    dm:remark """1996년 12월 18일 원 결의안 채택 이후, 잭슨이 원 결의안을 즉시 공개적으로 비판할지, 공개 비판을 유보하고 정책의 취지를 먼저 확인할지를 비교하도록 작업자가 구성한 딜레마이다. 두 선택지를 Jesse Jackson이 당시 명시적으로 비교했다는 직접 기록은 확인되지 않았다."""@ko ;
     dm:dataset """oakebo""" ;
     dm:recorder """수현"""@ko ;
-    dm:recordDate "2026-10-15"^^xsd:date ;
-    dm:note """작업자 해석: 12/22 공개 비판과 이후 입장 완화를 바탕으로 ‘즉시 공개 비판’과 ‘비판 유보·정책 취지 확인’을 두 선택지로 구성하였다. Jackson이 당시 두 선택지를 명시적으로 비교했다는 직접 기록은 확인되지 않았다."""@ko .
+    dm:recordDate "2026-11-19"^^xsd:date ;
+    dm:note """작업자 해석: 12/21 시카고 성명과 12/22 공개 비판, 이후 입장 완화를 바탕으로 ‘즉시 공개 비판’과 ‘비판 유보·정책 취지 확인’을 두 선택지로 구성하였다. Jackson이 당시 두 선택지를 명시적으로 비교했다는 직접 기록은 확인되지 않았다."""@ko .
 
 dm:A00129 a dm:Option ;
     rdfs:label """잭슨: 공개적으로 비판한다"""@ko ;
     dm:groupName """선택지"""@ko ;
-    dm:remark """원 결의안의 문구를 곧바로 공개 비판하는 선택지이다. / 작업자 해석: 표준 영어 습득의 중요성을 즉시 주장할 수 있지만, 정책의 취지를 확인하지 못한 채 비판할 위험이 있다."""@ko ;
+    dm:remark """원 결의안의 문구를 즉시 공개적으로 비판하는 선택지이다. / 작업자 해석 및 가상 시뮬레이션: 문제라고 판단한 내용을 빠르게 공론화할 수 있지만, 정책의 실제 취지를 충분히 확인하지 못한 상태에서 비판할 가능성이 있다. 이 득실은 실제 역사적 결과가 아니라 선택 상황을 구성하기 위한 예상이다."""@ko ;
     dm:dataset """oakebo""" ;
     dm:recorder """수현"""@ko ;
-    dm:recordDate "2026-10-13"^^xsd:date .
+    dm:recordDate "2026-11-19"^^xsd:date .
 
 dm:A00130 a dm:Option ;
     rdfs:label """잭슨: 공개 비판을 유보한다"""@ko ;
     dm:groupName """선택지"""@ko ;
-    dm:remark """정책의 취지를 확인할 때까지 공개 비판을 미루는 선택지이다. / 작업자 해석: 확인한 뒤 확실하게 비판할 수 있지만, 문제라고 본 표현을 즉시 비판하는 효과는 포기한다."""@ko ;
+    dm:remark """공개 비판을 유보하고 정책의 취지를 먼저 확인하는 선택지이다. / 작업자 해석 및 가상 시뮬레이션: 추가 정보를 확보한 뒤 신중하게 판단할 수 있지만, 문제라고 판단한 표현에 즉각 대응하지 못한다. Jesse Jackson이 실제로 이 선택지를 명시적으로 검토했다는 직접 기록은 확인되지 않았다."""@ko ;
     dm:dataset """oakebo""" ;
     dm:recorder """수현"""@ko ;
-    dm:recordDate "2026-10-13"^^xsd:date .
+    dm:recordDate "2026-11-19"^^xsd:date .
 
 dm:A00131 a dm:Document ;
     rdfs:label """로스앤젤레스 타임스의 잭슨 비판 기사"""@ko ;
@@ -250,6 +249,24 @@ dm:A00147 a dm:Claim ;
     dm:recorder """수현"""@ko ;
     dm:recordDate "2026-10-13"^^xsd:date .
 
+dm:A00148 a dm:Claim ;
+    rdfs:label """오클랜드 교육위원회의 주장: Ebonics는 아프리카계 미국 학생들의 ‘predominately primary language’이다"""@ko ;
+    dm:groupName """주장"""@ko ;
+    dm:remark """원 결의안에서 아프리카계 미국 학생들의 언어를 ‘predominately primary language’라고 표현한 내용을 Claim으로 기록한 것이다. 이는 해당 내용이 객관적 사실이라는 의미가 아니라, 원 결의안이 제시한 주장으로 구분하기 위한 것이다. / 원문 표기: “predominately primary language”."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-11-19"^^xsd:date ;
+    dm:note """원 결의안의 표현을 사실이 아니라 Claim으로 분리하여 챗봇이 ‘누가 무엇을 주장했는가’를 구분해 설명할 수 있도록 추가하였다."""@ko .
+
+dm:A00149 a dm:Claim ;
+    rdfs:label """잭슨의 주장: 원 결의안은 흑인 학생들의 성공 기회를 해칠 수 있다"""@ko ;
+    dm:groupName """주장"""@ko ;
+    dm:remark """1996년 12월 22일 「Meet the Press」에서 잭슨은 원 결의안이 흑인 학생들의 성공 가능성을 약화시키고, 표준 영어를 충분히 익히지 못할 경우 취업 기회에서 불리할 수 있다는 취지로 비판했다. 이 Claim은 잭슨이 실제로 공개 비판한 이유를 데이터로 구분하기 위해 기록한 것이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko ;
+    dm:recordDate "2026-11-19"^^xsd:date ;
+    dm:note """근거 기록물은 1996년 12월 23일 Los Angeles Times의 잭슨 비판 기사(A00131)이다. 시뮬레이션에서는 사용자가 선택하기 전 실제 역사 정보로 선행 공개하지 않는다."""@ko .
+
 # -----------------------------------------------------------------------------
 # Core RDF triples
 # -----------------------------------------------------------------------------
@@ -261,8 +278,8 @@ dm:A00129 dm:actualChooser dm:A00123 .
 dm:A00128 dm:hasDecisionMaker dm:A00123 .
 dm:A00128 dm:hasOption dm:A00129 .
 dm:A00128 dm:hasOption dm:A00130 .
-dm:A00129 dm:isRealizedBy dm:A00127 .
-dm:A00127 dm:isOutcomeOf dm:A00128 .
+dm:A00129 dm:isRealizedBy dm:A00134 .
+dm:A00134 dm:isOutcomeOf dm:A00128 .
 dm:A00132 dm:reports dm:A00133 .
 dm:A00132 schema:publisher dm:A00144 .
 dm:A00142 dm:reports dm:A00136 .
@@ -282,9 +299,28 @@ dm:A00147 dm:isAbout dm:A00126 .
 dm:A00120 dm:isEvidenceFor dm:A00147 .
 dm:A00139 dm:hasParticipant dm:A00124 .
 dm:A00138 dm:hasParticipant dm:A00124 .
+dm:A00134 dm:hasParticipant dm:A00123 .
+dm:A00131 dm:reports dm:A00134 .
+dm:A00120 dm:isAbout dm:A00126 .
+dm:A00120 dm:isEvidenceFor dm:A00128 .
+dm:A00148 dm:hasClaimant dm:A00124 .
+dm:A00148 dm:isAbout dm:A00126 .
+dm:A00120 dm:isEvidenceFor dm:A00148 .
+dm:A00149 dm:hasClaimant dm:A00123 .
+dm:A00149 dm:isAbout dm:A00120 .
+dm:A00131 dm:isEvidenceFor dm:A00149 .
+dm:A00149 dm:isReasonFor dm:A00129 .
+dm:A00139 dm:precedes dm:A00134 .
+dm:A00134 dm:precedes dm:A00127 .
+dm:A00127 dm:precedes dm:A00133 .
+dm:A00133 dm:precedes dm:A00136 .
+dm:A00136 dm:precedes dm:A00135 .
+dm:A00135 dm:precedes dm:A00138 .
+dm:A00138 dm:precedes dm:A00140 .
+dm:A00122 dm:reports dm:A00140 .
 
 # -----------------------------------------------------------------------------
-# Triple provenance / relation remarks (standard RDF reification)
+# Triple remarks / provenance (RDF reification)
 # -----------------------------------------------------------------------------
 oakebo:statement001 a rdf:Statement ;
     rdf:subject dm:A00131 ;
@@ -346,23 +382,23 @@ oakebo:statement008 a rdf:Statement ;
     rdf:subject dm:A00128 ;
     rdf:predicate dm:hasOption ;
     rdf:object dm:A00130 ;
-    dm:remark """작업자 해석: 이 딜레마의 선택지 중 하나는 원 결의안을 즉시 공개적으로 비판하는 것이다."""@ko ;
+    dm:remark """작업자 해석: 이 딜레마의 다른 선택지는 공개 비판을 유보하고 정책의 취지를 먼저 확인하는 것이다. Jesse Jackson이 실제로 이 선택지를 명시적으로 검토했다는 직접 기록은 확인되지 않았다."""@ko ;
     dm:dataset """oakebo""" ;
     dm:recorder """수현"""@ko .
 
 oakebo:statement009 a rdf:Statement ;
     rdf:subject dm:A00129 ;
     rdf:predicate dm:isRealizedBy ;
-    rdf:object dm:A00127 ;
-    dm:remark """잭슨의 실제 선택은 바로 공개 비판을 하는 것이다.공개적으로 비판한다는 선택지는 1996년 12월 22일 「미트 더 프레스」에서의 결의안 비판 사건으로 실현되었다."""@ko ;
+    rdf:object dm:A00134 ;
+    dm:remark """공개적으로 비판한다는 선택은 1996년 12월 21일 잭슨이 시카고에서 결의안을 공개 비판하는 성명을 발표한 사건에서 처음 확인된다."""@ko ;
     dm:dataset """oakebo""" ;
     dm:recorder """수현"""@ko .
 
 oakebo:statement010 a rdf:Statement ;
-    rdf:subject dm:A00127 ;
+    rdf:subject dm:A00134 ;
     rdf:predicate dm:isOutcomeOf ;
     rdf:object dm:A00128 ;
-    dm:remark """1996년 12월 22일의 공개 비판은 이 딜레마에서 실제로 나타난 결과이다."""@ko ;
+    dm:remark """1996년 12월 21일의 시카고 성명은 작업자가 구성한 이 딜레마에서 실제로 확인되는 첫 공개 비판 결과이다."""@ko ;
     dm:dataset """oakebo""" ;
     dm:recorder """수현"""@ko .
 
@@ -515,5 +551,157 @@ oakebo:statement029 a rdf:Statement ;
     rdf:predicate dm:hasParticipant ;
     rdf:object dm:A00124 ;
     dm:remark """1997년 1월 15일 수정 결의안 채택 사건에 오클랜드 교육위원회가 참여했다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement030 a rdf:Statement ;
+    rdf:subject dm:A00134 ;
+    rdf:predicate dm:hasParticipant ;
+    rdf:object dm:A00123 ;
+    dm:remark """1996년 12월 21일 시카고 성명의 당사자는 제시 잭슨이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement031 a rdf:Statement ;
+    rdf:subject dm:A00131 ;
+    rdf:predicate dm:reports ;
+    rdf:object dm:A00134 ;
+    dm:remark """이 기사는 12월 22일 「Meet the Press」 발언뿐 아니라 12월 21일 시카고에서 발표한 잭슨의 성명도 보도한다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement032 a rdf:Statement ;
+    rdf:subject dm:A00120 ;
+    rdf:predicate dm:isAbout ;
+    rdf:object dm:A00126 ;
+    dm:remark """원 결의안은 Ebonics의 언어적 지위와 이를 교육에 어떻게 활용할 것인지에 관한 내용을 담고 있다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement033 a rdf:Statement ;
+    rdf:subject dm:A00120 ;
+    rdf:predicate dm:isEvidenceFor ;
+    rdf:object dm:A00128 ;
+    dm:remark """작업자 해석으로 구성한 딜레마는 원 결의안의 실제 문구와 내용을 직접적인 근거로 삼는다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement034 a rdf:Statement ;
+    rdf:subject dm:A00148 ;
+    rdf:predicate dm:hasClaimant ;
+    rdf:object dm:A00124 ;
+    dm:remark """이 주장을 제시한 주체는 오클랜드 교육위원회이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement035 a rdf:Statement ;
+    rdf:subject dm:A00148 ;
+    rdf:predicate dm:isAbout ;
+    rdf:object dm:A00126 ;
+    dm:remark """이 주장은 원 결의안에서 Ebonics와 관련된 아프리카계 미국 학생들의 언어적 지위에 관한 것이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement036 a rdf:Statement ;
+    rdf:subject dm:A00120 ;
+    rdf:predicate dm:isEvidenceFor ;
+    rdf:object dm:A00148 ;
+    dm:remark """원 결의안의 ‘predominately primary language’라는 표현이 해당 Claim의 직접적인 근거이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement037 a rdf:Statement ;
+    rdf:subject dm:A00149 ;
+    rdf:predicate dm:hasClaimant ;
+    rdf:object dm:A00123 ;
+    dm:remark """이 주장을 한 사람은 제시 잭슨이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement038 a rdf:Statement ;
+    rdf:subject dm:A00149 ;
+    rdf:predicate dm:isAbout ;
+    rdf:object dm:A00120 ;
+    dm:remark """이 주장은 잭슨이 원 결의안이 학생들의 Standard English 습득과 사회적 기회에 미칠 영향을 비판한 내용이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement039 a rdf:Statement ;
+    rdf:subject dm:A00131 ;
+    rdf:predicate dm:isEvidenceFor ;
+    rdf:object dm:A00149 ;
+    dm:remark """1996년 12월 23일 Los Angeles Times 기사는 잭슨이 원 결의안이 흑인 학생들의 성공 가능성을 약화시키고 취업에 불리할 수 있다고 비판한 내용을 기록한다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement040 a rdf:Statement ;
+    rdf:subject dm:A00149 ;
+    rdf:predicate dm:isReasonFor ;
+    rdf:object dm:A00129 ;
+    dm:remark """잭슨이 원 결의안이 흑인 학생들의 성공 기회를 해칠 수 있다고 본 주장은 실제 공개 비판 선택의 이유를 보여 주는 근거이다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement041 a rdf:Statement ;
+    rdf:subject dm:A00139 ;
+    rdf:predicate dm:precedes ;
+    rdf:object dm:A00134 ;
+    dm:remark """1996년 12월 18일 원 결의안 채택이 12월 21일 잭슨의 시카고 성명보다 앞선다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement042 a rdf:Statement ;
+    rdf:subject dm:A00134 ;
+    rdf:predicate dm:precedes ;
+    rdf:object dm:A00127 ;
+    dm:remark """1996년 12월 21일 시카고 성명이 12월 22일 「Meet the Press」 공개 비판보다 앞선다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement043 a rdf:Statement ;
+    rdf:subject dm:A00127 ;
+    rdf:predicate dm:precedes ;
+    rdf:object dm:A00133 ;
+    dm:remark """1996년 12월 22일 공개 비판이 12월 26일 입장 완화보다 앞선다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement044 a rdf:Statement ;
+    rdf:subject dm:A00133 ;
+    rdf:predicate dm:precedes ;
+    rdf:object dm:A00136 ;
+    dm:remark """1996년 12월 26일 입장 완화가 12월 27일 게트리지와의 전화 회의보다 앞선다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement045 a rdf:Statement ;
+    rdf:subject dm:A00136 ;
+    rdf:predicate dm:precedes ;
+    rdf:object dm:A00135 ;
+    dm:remark """1996년 12월 27일 전화 회의가 12월 30일 오클랜드 관계자와의 회동보다 앞선다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement046 a rdf:Statement ;
+    rdf:subject dm:A00135 ;
+    rdf:predicate dm:precedes ;
+    rdf:object dm:A00138 ;
+    dm:remark """1996년 12월 30일 회동이 1997년 1월 15일 수정 결의안 채택보다 앞선다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement047 a rdf:Statement ;
+    rdf:subject dm:A00138 ;
+    rdf:predicate dm:precedes ;
+    rdf:object dm:A00140 ;
+    dm:remark """1997년 1월 15일 수정 결의안 채택이 1월 23일 미국 상원 Ebonics 청문회보다 앞선다."""@ko ;
+    dm:dataset """oakebo""" ;
+    dm:recorder """수현"""@ko .
+
+oakebo:statement048 a rdf:Statement ;
+    rdf:subject dm:A00122 ;
+    rdf:predicate dm:reports ;
+    rdf:object dm:A00140 ;
+    dm:remark """이 공식 기록은 1997년 1월 23일 열린 미국 상원 Ebonics 청문회의 내용을 기록한 문서이다."""@ko ;
     dm:dataset """oakebo""" ;
     dm:recorder """수현"""@ko .
