@@ -33,7 +33,7 @@ TEMPERATURE = 0.7                               # 0.0 ~ 2.0 사이 숫자 (낮�
 # 3. 전시 모드 (학회·시연 당일에만 True)
 #    True로 바꾸면 참여자는 키·파일 입력 없이 바로 대화만 할 수 있습니다.
 #    API 키는 이 파일에 적지 않습니다. 키는 Streamlit 앱 설정의 Secrets에만 넣습니다.
-EXHIBIT_MODE = False
+EXHIBIT_MODE = True
 
 
 # 4. AI 사용 표기
