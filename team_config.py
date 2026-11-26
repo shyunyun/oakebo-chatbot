@@ -26,8 +26,8 @@ CHAT_PLACEHOLDER = "챗봇에게 질문해 보세요"        # 입력창 안의 
 
 
 # 2. 모델 설정 (테스트로 확정한 값을 적습니다)
-MODEL = "gemini-2.5-flash-lite"                 # 사용할 모델 이름
-TEMPERATURE = 0.7                               # 0.0 ~ 2.0 사이 숫자 (낮을수록 일관된 답)
+MODEL = "gemini-3.8-flash"                 # 사용할 모델 이름
+TEMPERATURE = 0.5                                # 0.0 ~ 2.0 사이 숫자 (낮을수록 일관된 답)
 
 
 # 3. 전시 모드 (학회·시연 당일에만 True)
